@@ -11,7 +11,7 @@
   width: 400px;
   height: 300px;
   content: " ";
-  background-image: url("maxresdefault.jpg");
+  background-image: url("traffic.png");
   background-repeat: no-repeat;
   background-position: 50% 0;
   background-size: cover;
@@ -27,7 +27,7 @@
   font: 12px sans-serif;
   color: white;
   text-align: center;
-  background: #551aaf;
+  background: #e75480;
   border: 0;
   border-radius: 10px;
 }

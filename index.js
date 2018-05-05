@@ -131,7 +131,7 @@ d3.csv("data.csv", function (err, data) {
     .attr("cx", d => xLinearScale(d[chosenXAxis]))
     .attr("cy", d => yLinearScale(d.estimateTotal))
     .attr("r", 20)
-    .attr("fill", "pink")
+    .attr("fill", "gold")
     .attr("opacity", ".5")
 
   // Create group for  2 x- axis labels
@@ -143,14 +143,14 @@ d3.csv("data.csv", function (err, data) {
     .attr("y", 20)
     .attr("value", "depressionRate") //value to grab for event listener
     .classed("active", true)
-    .text("Depression Rate");
+    .text("Percent Responding 'Yes' to Depression");
 
   var nonexerciseLabel = labelsGroup.append("text")
     .attr("x", 0)
     .attr("y", 40)
     .attr("value", "percentNonexercise") //value to grab for event listener
     .classed("inactive", true)
-    .text("Percent Nonexercise");
+    .text("Percentage Responding 'No' to Exercise");
 
   // append y axis
   chartGroup.append("text")
